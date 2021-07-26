@@ -19,14 +19,19 @@ let getRandomInt = (min, max) => {
      return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
    }
 
+   let getRandomColor = () =>{
+    var redVal = getRandomInt(0,255);
+    var greenVal = getRandomInt(0,255);
+    var blueVal = getRandomInt(0,255);
+   var randomColor =  rgbToHex(redVal, greenVal, blueVal);
+    spnColor.innerHTML = randomColor
+    spnColor.style = 'color:' + randomColor
+   }
 
-
+window.addEventListener('DOMContentLoaded',() =>{
+  getRandomColor()
+})
 
 btnRandomColor.addEventListener('click', () =>{
-     var redVal = getRandomInt(0,255);
-     var greenVal = getRandomInt(0,255);
-     var blueVal = getRandomInt(0,255);
-    var randomColor =  rgbToHex(redVal, greenVal, blueVal);
-     spnColor.innerHTML = randomColor
-     spnColor.style = 'color:' + randomColor
+  getRandomColor()
 })
