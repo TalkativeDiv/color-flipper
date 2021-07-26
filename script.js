@@ -18,5 +18,5 @@ let getRandomColor = () =>{
     spnColor.innerHTML = randomColor;
     spnColor.style = 'color:' + randomColor;
 }
-window.addEventListener('DOMContentLoaded',getRandomColor());
-btnRandomColor.addEventListener('click', getRandomColor());
+window.addEventListener('DOMContentLoaded',() =>getRandomColor());
+btnRandomColor.addEventListener('click',() =>getRandomColor());
