@@ -34,6 +34,7 @@ color:white;
   text-align: center;
 }
 .color-container {
+  margin-top: 25px;
   border-radius: 50px;
   padding: 10% 10% 10% 10%;
   height: 10rem;
